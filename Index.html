@@ -93,6 +93,63 @@
         transform: scale(1.05);
       }
 
+      /* ---------------- BLOCKS (F14) ---------------- */
+      .blocks {
+        max-width: 1200px;
+        margin: 10px auto 40px;
+        padding: 0 20px;
+      }
+
+      .blocks-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 22px;
+      }
+
+      .card {
+        border: 1px solid #e5e5e5;
+        border-radius: 12px;
+        overflow: hidden;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .card img {
+        width: 100%;
+        height: 210px;
+        object-fit: cover;
+      }
+
+      .card-body {
+        padding: 16px 18px 20px;
+      }
+
+      .card h3 {
+        margin: 0 0 10px;
+        font-size: 1.25rem;
+      }
+
+      .card p {
+        margin: 0 0 16px;
+        line-height: 1.45;
+      }
+
+      .card a {
+        display: inline-block;
+        padding: 10px 14px;
+        border: 2px solid #c2002f;
+        border-radius: 24px;
+        text-decoration: none;
+        font-weight: 600;
+        color: #c2002f;
+      }
+
+      .card a:hover {
+        background: #c2002f;
+        color: #fff;
+      }
+
       /* ---------------- FOOTER SIMPLE ---------------- */
       footer {
         background: #f5f5f5;
@@ -149,6 +206,48 @@
             alt="Intelligence Artificielle"
           />
         </a>
+      </div>
+    </section>
+
+    <!-- SECTION BLOCKS -->
+    <section class="blocks">
+      <div class="blocks-grid">
+        <!-- Bloc Post-bac -->
+        <article class="card">
+          <img
+            src="https://isen-ouest.fr/wp-content/uploads/2024/10/18/formation-initiale-scaled.jpg"
+            alt="Formations post-bac"
+          />
+          <div class="card-body">
+            <h3>Formations post-bac</h3>
+            <p>
+              Chaque étudiant construit son propre parcours de formation sur 5
+              ans. Au cours des trois premières années post-bac, les étudiants
+              choisissent leur cursus parmi 7 cycles de formation différents.
+            </p>
+            <a href="postbac.html">Cycles post-bac</a>
+          </div>
+        </article>
+
+        <!-- Bloc Apprentissage -->
+        <article class="card">
+          <img
+            src="https://isen-ouest.fr/wp-content/uploads/2024/10/18/formation-apprentissage-scaled.jpg"
+            alt="Devenir ingénieur par alternance"
+          />
+          <div class="card-body">
+            <h3>Devenir ingénieur par alternance</h3>
+            <p>
+              Le cycle ingénieur en apprentissage permet d’alterner périodes à
+              l’école et en entreprise en montant progressivement en compétence.
+              Immersion professionnelle rapide et rémunération pendant toute la
+              durée du contrat.
+            </p>
+            <a href="apprentissage.html"
+              >Formation d’ingénieurs sous statut apprenti</a
+            >
+          </div>
+        </article>
       </div>
     </section>
 
