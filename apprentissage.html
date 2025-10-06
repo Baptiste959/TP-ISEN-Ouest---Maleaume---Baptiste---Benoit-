@@ -63,6 +63,50 @@
         text-decoration: underline;
       }
 
+      /* ---------------- TEXT_IMG (F17) ---------------- */
+      .apprentissage-section {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+
+      .text-img {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+      }
+
+      .text-img img {
+        width: 45%;
+        border-radius: 10px;
+      }
+
+      .text-img .text {
+        width: 50%;
+      }
+
+      .text-img h2 {
+        color: #c2002f;
+        margin-bottom: 15px;
+      }
+
+      .text-img p {
+        line-height: 1.5;
+        margin-bottom: 12px;
+      }
+
+      .text-img a {
+        color: #c2002f;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      .text-img a:hover {
+        text-decoration: underline;
+      }
+
       /* ---------------- FOOTER SIMPLE ---------------- */
       footer {
         background: #f5f5f5;
@@ -95,7 +139,30 @@
       </div>
     </header>
 
-    <!-- CONTENU À VENIR (F17) -->
+    <!-- SECTION TEXT_IMG -->
+    <section class="apprentissage-section">
+      <div class="text-img">
+        <div class="text">
+          <h2>Devenir ingénieur en alternance</h2>
+          <p>
+            Le cycle ingénieur en apprentissage permet d’alterner les périodes à
+            l’école et les périodes en entreprise, en montant progressivement en
+            compétence.
+          </p>
+          <p>
+            Cette formation favorise une immersion professionnelle rapide tout
+            en étant rémunéré pendant toute la durée du contrat.
+          </p>
+          <a href="https://isen-ouest.fr/formation-apprentissage/"
+            >En savoir plus</a
+          >
+        </div>
+        <img
+          src="https://isen-ouest.fr/wp-content/uploads/2024/10/18/formation-apprentissage-scaled.jpg"
+          alt="Apprentissage ISEN Ouest"
+        />
+      </div>
+    </section>
 
     <!-- FOOTER SIMPLE -->
     <footer class="site-footer">
